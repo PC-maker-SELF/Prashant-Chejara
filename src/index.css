@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-primary: #d4af35;
+  --color-primary-dark: #b08d26;
+  --color-accent-maroon: #5e1914;
+  --color-bg-light: #fdfcf8;
+  --color-bg-dark: #201d12;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-light text-slate-900 font-sans;
+  }
+}
+
+@layer utilities {
+  .serif-font {
+    font-family: "Playfair Display", serif;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
